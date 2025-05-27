@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    transition: all 0.3s ease;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.name {
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+
+.intro {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.sns-links img {
+    width: 24px;
+    margin: 0 8px;
+    transition: transform 0.2s ease;
+}
+
+.sns-links img:hover {
+    transform: scale(1.2);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.details {
+    margin-top: 20px;
+    text-align: left;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.details ul {
+    padding-top: 20px;
+}
+
+.details h2 {
+    margin-top: 0;
+}
+
+.hidden {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.visible {
+    max-height: 500px;
+}
